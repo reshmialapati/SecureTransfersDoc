@@ -1,0 +1,168 @@
+/* Sidebar.css */
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 50px;
+  padding: 10px 5px;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000040;
+  padding: 10px;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.home-button:hover {
+  color: #fea419;
+}
+
+/* .sidebar .home-button, */
+.sidebar .collapse-button {
+  display: block;
+  margin-bottom: 10px;
+  color: #000040;
+  border-radius: 10px;
+  border-color: #000040;
+  border-width: 20px;
+}
+
+.sidebar .topic {
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000040;
+  
+}
+
+.sidebar .subheadings {
+  padding-left: 15px;
+  color: #000040;
+}
+
+.sidebar li.selected {
+  background-color: #ddd;
+}
+
+/* Icon size adjustment */
+.topic .react-icons {
+  font-size: 200px;
+
+} 
+
+.subsubheadings {
+  padding-left: 40px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* 
+.sidebar li {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+*/
+.sidebar li:hover {
+  background-color: #fea419;
+} 
+
+.collapse-button ,.expand-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000040;
+  padding: 10px;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.collapse-button:hover{
+  color: #fea419; /* Change to your desired hover color */
+}
+
+.index-home{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+/* Button to expand subheadings */
+.expand-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Subheadings list */
+.subheadings {
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 2px solid #fea419;
+  border-radius: 4px;
+  color: #000040;
+}
+
+/* Individual subheading item */
+.subheadings ul {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Hover effect for subheadings */
+.subheadings li:hover {
+  background-color: #fea419;
+  border-radius: 4px;
+}
+
+/* Highlight selected topic */
+.topic.selected {
+  background-color: #fea419;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.dark-mode .collapse-button{
+  background-color: #000040;
+  color: #ffffff; 
+}
+.dark-mode .expand-button{
+  background-color: #000040;
+  color: #ffffff; 
+}
+.dark-mode .topic {
+  /* background-color: #fea419; */
+  color: #ffffff;
+}
+
+.dark-mode .subheadings {
+  color: #ffffff;
+}
+
+/* Highlight selected subheading */
+.subheadings li.selected {
+  background-color: #fea419;
+  font-weight: bold;
+}
+

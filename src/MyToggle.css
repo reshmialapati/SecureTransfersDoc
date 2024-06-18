@@ -1,0 +1,90 @@
+.falseState {
+    background-color: rgb(11, 29, 75);
+}
+
+.trueState {
+    background-color: #ffffff;
+}
+
+.alignToggle {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    display: inline-flex;
+    text-align: center;
+    color: black;
+    width: 90%;
+    height: 90%;
+}
+
+.tooltiptext {
+    background-color: rgb(31 41 55);
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 5px 0;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    width: 80px;
+
+    /* Position the tooltip */
+    position: absolute;
+    top: 1.5rem;
+    z-index: 1;
+
+    /* Transform the tooltip */
+    transform: scale(0);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.myToggle:hover .tooltiptext {
+    transform: scale(1);
+}
+
+.myToggle {
+    position: relative;
+    display: inline-flex;
+    height: 23px;
+    width: 60px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 9999px;
+    border-width: 0px;
+    border-color: transparent;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+    margin-right: 15px;
+    flex-wrap: wrap;
+}
+
+.myToggle:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.toggleButtonDark {
+    transform: translateX(1.6rem)
+}
+
+.toggleButtonLight {
+    transform: translateX(0px);
+}
+
+.toggleButton {
+    background-color: #fea419;
+    pointer-events: none;
+    display: block;
+    height: 20px;
+    width: 26px;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}

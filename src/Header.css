@@ -1,0 +1,22 @@
+/* Header.css */
+.header {
+    /* background-color: #000040; */
+    /* padding: 20px; */
+    /* color: white; */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-controls {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .header-controls input {
+    margin-right: 10px;
+  }
+  

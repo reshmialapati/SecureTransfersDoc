@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body.dark-mode {
+  background-color: #000040;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header.dark-mode {
+  background-color: #000040;
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header.light-mode {
+  background-color: #dddd;
+  color: #000000;
+}
+
+
+.app {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+}
+
+.header {
+   background-color: #f0f0f0;
+  /* padding: 20px; */
+  height: 60px; 
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-left {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-right {
+  display: flex;
+  align-items: center;
 }
+
+.header-right input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.logo {
+  height: 80px;
+  width: 290px;
+  background:none;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.dark-mode .header {
+  background-color: #000040;
+  color: #ddd;
+}
+
+.dark-mode .sidebar {
+  background-color: #000040; 
+  color: #ddd;
+}
+
+.dark-mode .main-content {
+  background-color: #212151;
+  color: #ddd;
+}
+
+.sidebar li:hover {
+  background-color: #fea419; /* Change this to your desired hover background color */
+  color: #333; /* Change this to your desired hover text color */
+}
+
+.dark-mode .home-button{
+  background-color: #000040;
+  color: #ffffff;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer p {
+  margin: 0;
+  color: #000040;
+}
+
