@@ -271,9 +271,12 @@
 }
  
 .expanded-icon {
-  font-size: 1em;
-  width: auto;
-  margin-top: 0;
+  font-size: 1.5em;
+  width: 100%;
+  margin-top: 75% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .topic .collapsed-icon,
 .topic .expanded-icon  {

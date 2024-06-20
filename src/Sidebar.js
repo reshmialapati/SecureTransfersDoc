@@ -3,12 +3,6 @@ import "./Sidebar.css";
 import {
   FaChevronDown,
   FaChevronUp,
-  FaChevronLeft,
-  FaChevronRight,
-  FaBook,
-  FaLightbulb,
-  FaMale,
-  FaFolder,
   FaPlus,
   FaMinus,
 } from "react-icons/fa";
@@ -56,10 +50,7 @@ const Sidebar = ({
               value: "GenerateLogReport",
               subsubItems: [
                 { label: "Access via Admin UI", value: "AccessViaAdminUI" },
-                {
-                  label: "Via AuditingLogs folder",
-                  value: "ViaAuditingLogFolders",
-                },
+                { label: "Via AuditingLogs folder",value: "ViaAuditingLogFolders"},
               ],
             },
             { label: "Generate Audit Report", value: "GenerateAuditReport" },
@@ -280,6 +271,23 @@ const Sidebar = ({
           label: "Setting Transfer Group Send Order",
           value: "SettingTGSendOrder",
         },
+      ],
+      
+    },
+    {
+      label: "MONITORING",
+      value: "MONITORING",
+      icon: <img src="monitoring.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>,
+      subItems: [
+        {label: "Defining a File Transaction Filter",value: "definefilefilter"},
+        {label: "Viewing File Transaction Details",value: "viewfile"},
+        {label: "Downloading Received File Transactions",value: "downloadfile"},
+        {label: "Viewing Partner Activities", value: "viewpartner",},
+        {label: "Downloading Partner Application Log Files", value: "downloadpartner",},
+        {label: "Viewing Partner Statistics", value: "viewpartnerstats",},
+        {label:"Document Status Overview", value: "DocStatus"},
+        {label:"Action Buttons", value: "ActionButtons"},
+        {label:"Reprocessing Unrecognized File Transactions", value: "reprocessingfile"},
       ],
     },
   ];
