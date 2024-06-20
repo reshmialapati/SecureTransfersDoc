@@ -7,10 +7,13 @@ import {
   FaChevronRight,
   FaBook,
   FaLightbulb,
+  FaMale,
   FaFolder,
   FaPlus,
-  FaMinus
+  FaMinus,
 } from "react-icons/fa";
+import { TbSquareRoundedChevronRightFilled } from "react-icons/tb";
+import { TbSquareRoundedChevronLeftFilled } from "react-icons/tb";
 
 const Sidebar = ({
   selectedItem,
@@ -25,13 +28,18 @@ const Sidebar = ({
     {
       label: "INTRODUCTION",
       value: "INTRODUCTION",
-      icon: <FaBook />,
-      subItems: [{ label: "Key Features", value: "KeyFeatures" }],
+      icon: <img src="introduction.png" alt="intro" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}} />,
+      subItems: [
+        { label: "Key Features", value: "KeyFeatures" },
+        { label: "SecureTransfers Platform", value: "SecureTransfersPlatform" },
+        { label: "Secure Store", value: "SecureStore" },
+        { label: "Secure Automation", value: "SecureAutomation" },
+      ],
     },
     {
       label: "PROJECTS",
       value: "PROJECTS",
-      icon: <FaLightbulb />,
+      icon: <img src="projects.png" alt="img" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}}/>,
       subItems: [
         { label: "Key Purposes", value: "KeyPurposes" },
 
@@ -41,14 +49,10 @@ const Sidebar = ({
           subItems: [
             { label: "Project Creation", value: "ProjectCreation" },
             { label: "Change Ownership", value: "ChangeOwnership" },
-            {
-              label: "Modify File Retention Policy",
-              value: "ModifyFileRetentionPolicy",
-            },
-            { label: "Upload project logo", value: "UploadProjectLogo" },
+            { label: "Uploading a Custom Logo", value: "UploadProjectLogo" },
             { label: "Define help message", value: "DefineHelpMessage" },
             {
-              label: "Generate Log Report",
+              label: "Generate an Activity Log Report",
               value: "GenerateLogReport",
               subsubItems: [
                 { label: "Access via Admin UI", value: "AccessViaAdminUI" },
@@ -64,9 +68,35 @@ const Sidebar = ({
       ],
     },
     {
+      label: "USERS",
+      value: "USERS",
+      icon: <img src="user.png" alt="img" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}}/>,
+     
+      subItems: [
+        { label: "User Types ", value: "UserTypes" },
+        {
+          label: "User Management",
+          value: "UserManagement",
+          subItems: [
+            { label: "Creating a User", value: "createuser" },
+            { label: "Updating a User", value: "updateuser" },
+            { label: "Activating a User", value: "activateuser" },
+            { label: "Configuring Extended Controls", value: "configurecontrols" },
+            { label: "Deleting a User", value: "deleteuser" },
+            { label: "Validating User Folder Access", value: "validatefolderaccess" },
+            { label: "ADSecurityGroup", value: "ADSecurityGroup" },
+            { label: "SSH-2 Key Based Access Control", value: "SSH2KeyAccess" },
+            { label: "SSH-2 Key Type, Length & Strength Validation", value: "SSH2KeyValidation" },
+            { label: "Resetting a User Password", value: "resettingpassword" },
+            {label: "Suspending and Resuming User Accounts", value: "useraccounts"}
+          ],
+        },
+      ],
+    },
+    {
       label: "FOLDERS",
       value: "FOLDERS",
-      icon: <FaFolder />,
+      icon: <img src="folder.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>,
       subItems: [
         {
           label: "Organizing and Managing Folders",
@@ -103,7 +133,7 @@ const Sidebar = ({
     {
       label: "INTERFACE MANAGEMENT",
       value: "INTERFACEMANAGEMENT",
-      icon: <FaFolder />,
+      icon: <img src="interface.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>,
       subItems: [
         {
           label: "Key Functions of Interfaces",
@@ -118,42 +148,138 @@ const Sidebar = ({
           value: "ConfiguringInterface",
           subItems: [
             { label: "Interface Setup", value: "InterfaceSetup" },
-            { label: "File Management and Retention", value: "FileManagementRetention" },
-            { label: "Compression Settings", value: "CompressionSettings",},
-            { label: "Cryptographic Configurations", value: "CryptographicConfigurations",},
-            { label: "Signature Management", value: "SignatureManagement",},
-            { label: "Sequencing Files", value: "SequencingFiles",},
-            { label: "Transfer Scheduling", value: "TransferScheduling"},
+            {
+              label: "File Management and Retention",
+              value: "FileManagementRetention",
+            },
+            { label: "Compression Settings", value: "CompressionSettings" },
+            {
+              label: "Cryptographic Configurations",
+              value: "CryptographicConfigurations",
+            },
+            { label: "Signature Management", value: "SignatureManagement" },
+            { label: "Sequencing Files", value: "SequencingFiles" },
+            { label: "Transfer Scheduling", value: "TransferScheduling" },
           ],
         },
         {
           label: "Class Pull Interface",
-          value: "classPullInterface"
+          value: "classPullInterface",
         },
         {
-          label:"Steps to Set up a Class Pull Interface",
-          value:"setupClassPullInterface",
+          label: "Steps to Set up a Class Pull Interface",
+          value: "setupClassPullInterface",
           subItems: [
             { label: "Interface Setup", value: "CPInterfaceSetup" },
             { label: "Managing File Handling Options", value: "ManagingFile" },
-            { label: "Scheduling File Transfers", value: "SchedulingFileTransfers",},
-            { label: "Ad-Hoc Scheduling", value: "AdHocScheduling",},
-          ]
+            {
+              label: "Scheduling File Transfers",
+              value: "SchedulingFileTransfers",
+            },
+            { label: "Ad-Hoc Scheduling", value: "AdHocScheduling" },
+          ],
         },
         {
-          label:"Advanced Interface Configuration",
-          value:"AdvancedInterfaceConfiguration",
+          label: "Advanced Interface Configuration",
+          value: "AdvancedInterfaceConfiguration",
           subItems: [
             { label: "Sequence Validation", value: "SequenceValidation" },
             { label: "Inactivity Detection", value: "InactivityDetection" },
-            { label: "Time Based File Processing", value: "TimeBasedFileProcessing",},
-            { label: "Ad-Hoc Scheduling", value: "AdvancedAdHocScheduling",},
-          ]
+            {
+              label: "Time Based File Processing",
+              value: "TimeBasedFileProcessing",
+            },
+            { label: "Ad-Hoc Scheduling", value: "AdvancedAdHocScheduling" },
+          ],
         },
         {
-          label:"Interface Cryptography Features",
-          value:"InterfaceCrypto"
-        }
+          label: "Interface Cryptography Features",
+          value: "InterfaceCrypto",
+        },
+        {
+          label: "Use Cases/ Example Scenarios",
+          value: "UseCases",
+        },
+        {
+          label: "PGP Features",
+          value: "PGPFeatures",
+          subItems: [
+            {
+              label: "Sending Encrypted Files to Partner",
+              value: "SendingEncryptedFiles",
+            },
+            {
+              label: "Receiving Encrypted Files from Partner",
+              value: "ReceivingEncryptedFiles",
+            },
+            { label: "PGP Troubleshooting", value: "PGPTroubleshooting" },
+          ],
+        },
+        {
+          label: "File Actions for PULL Interfaces",
+          value: "FileActions",
+          subItems: [
+            {
+              label: "File Compression and Decompression Features",
+              value: "FileCDFreatures",
+            },
+            {
+              label: "Multi-File Unzip for PULL Interfaces",
+              value: "MultiFileUnzip",
+            },
+          ],
+        },
+        {
+          label: "Combined Configuration Example",
+          value: "CombinedConfigurationExample",
+        },
+        {
+          label: "Encrypted Storage",
+          value: "EncryptedStorage",
+          subItems: [
+            { label: "Detailed Features", value: "DetailedFeatures" },
+            { label: "Configuration Steps", value: "ConfigurationSteps" },
+          ],
+        },
+        {
+          label: "Guide to Configuring Partners",
+          value: "GuidetoConfiguringPartners",
+        },
+        {
+          label: "Host Protocols and Their Parameters",
+          value: "HostProtocols",
+        },
+        { label: "Additional Settings", value: "AdditionalSettings" },
+        {
+          label: "Core Configuration Parameters",
+          value: "CoreConfigurationParameters",
+        },
+        {
+          label: "Host Protocols and Their Usage",
+          value: "HostProtocolsUsage",
+        },
+        { label: "Security Notes", value: "SecurityNotes" },
+        {
+          label: "Adding a Partner with SFTP Protocol",
+          value: "addpartnerwithsftp",
+        },
+        {
+          label: "Adding a Partner with AWS S3 Protocol",
+          value: "addpartnerwithaws",
+        },
+        {
+          label: "Configure a Pull Interface from the Partners Tab",
+          value: "PullInterfacePartnersTab",
+        },
+        {
+          label: "Configure a Push Interface from the Partners Tab",
+          value: "PushInterfacefromPartners",
+        },
+        { label: "Transfer Groups", value: "transferGroups" },
+        {
+          label: "Setting Transfer Group Send Order",
+          value: "SettingTGSendOrder",
+        },
       ],
     },
   ];
@@ -234,18 +360,28 @@ const Sidebar = ({
   return (
     <aside className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <div className="index-home">
-        <button className="collapse-button" onClick={toggleSidebar}>
-          {isCollapsed ? <FaChevronRight /> : <FaChevronLeft />}
+      <button
+        className="collapse-button"
+        // className={`collapse-button ${isCollapsed ? "collapsed" : "expanded"}`}
+        onClick={toggleSidebar}>
+          {/* {isCollapsed ?  :} */}
+          {isCollapsed  ? (
+                <TbSquareRoundedChevronRightFilled className='gricon' size={32} />
+              ) : (
+ 
+                <TbSquareRoundedChevronLeftFilled className='lricon' size={32} />
+              )} 
         </button>
-
-        <button className="expand-collapse-all" onClick={toggleAllTopics}>
-          {expandAll ? <FaMinus /> : <FaPlus />}
-        </button>
-        
+        {!isCollapsed && (
+          <button className="expand-collapse-all" onClick={toggleAllTopics}>
+            {expandAll ? <FaMinus /> : <FaPlus />}
+          </button>
+        )}
       </div>
-     
 
+      <div style={{marginTop:isCollapsed?"95%":"10%"}}>
       <ul>{renderTopics(topics)}</ul>
+      </div>
     </aside>
   );
 };

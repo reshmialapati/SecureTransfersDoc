@@ -16,18 +16,17 @@ header.dark-mode {
 }
 
 header.light-mode {
-  background-color: #dddd;
-  color: #000000;
+  background-color: #000040;
+  color: #ffffff;
 }
-.body {
-  overflow-y: hidden !important;
-}
+
 
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
   user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none;    /* Firefox */
   -ms-user-select: none;     /* Internet Explorer/Edge */
@@ -64,7 +63,7 @@ header.light-mode {
 }
 
 .logo {
-  height: 80px;
+  height: 60px;
   width: 290px;
   background:none;
 }
@@ -100,10 +99,10 @@ header.light-mode {
   color: #ddd;
 }
 
-.sidebar li:hover {
+/* .sidebar li:hover {
   background-color: #fea419; /* Change this to your desired hover background color */
-  color: #333; /* Change this to your desired hover text color */
-}
+  /* color: #333; Change this to your desired hover text color */
+/* } */ */
 
 .dark-mode .home-button{
   background-color: #000040;

@@ -8,7 +8,7 @@ const Header = ({ isDarkMode, toggleDarkMode, searchTerm, setSearchTerm,setSelec
   return (
     <header className="header">
       <div className="header-left">
-        <img src={isDarkMode ? "./logo_DarkBG.png" : "./logo_whiteBG.png"} alt="Logo" className="logo" />
+        <img src={"./logo_DarkBG.png"} alt="Logo" className="logo" />
       </div>
       <div className="header-right">
       <button className="home-button" onClick={() => setSelectedItem('Home')}>
