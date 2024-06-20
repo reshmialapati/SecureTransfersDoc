@@ -1,14 +1,26 @@
 /* Sidebar.css */
 .sidebar {
-  width: 250px;
+  width: 16.3%;
   background-color: #f0f0f0;
   padding: 20px;
-  transition: width 0.3s;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 4%;
+  bottom: 0; /* Extend to the bottom of the viewport */
+  transition: width 0.3s, padding 0.3s;
 }
 
+
 .sidebar.collapsed {
-  width: 50px;
+  width: 90px;
   padding: 10px 5px;
+}
+
+.sidebar .topic:hover {
+  background-color: #fea419;
+  border-color: #000040;
 }
 
 .home-button {
@@ -44,7 +56,6 @@
   justify-content: space-between;
   align-items: center;
   color: #000040;
-  
 }
 
 .sidebar .subheadings {
@@ -59,7 +70,6 @@
 /* Icon size adjustment */
 .topic .react-icons {
   font-size: 200px;
-
 } 
 
 .subsubheadings {
@@ -70,21 +80,22 @@
   list-style-type: none;
   padding: 0;
 }
-/* 
-.sidebar li {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.expand-collapse-all {
+  width: 20%;
+  height: 30%;
   padding: 10px;
-  border-radius: 4px;
+  background-color: #fea419;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
-*/
+
 .sidebar li:hover {
   background-color: #fea419;
 } 
 
-.collapse-button ,.expand-button {
+.collapse-button, .expand-button {
   background: none;
   border: none;
   cursor: pointer;
@@ -96,16 +107,15 @@
   font-size: 24px; /* Adjust the size as needed */
 }
 
-.collapse-button:hover{
+.collapse-button:hover {
   color: #fea419; /* Change to your desired hover color */
 }
 
-.index-home{
+.index-home {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
 
 /* Button to expand subheadings */
 .expand-button {
@@ -133,6 +143,7 @@
 /* Hover effect for subheadings */
 .subheadings li:hover {
   background-color: #fea419;
+  border-color: #000040;
   border-radius: 4px;
 }
 
@@ -140,16 +151,17 @@
 .topic.selected {
   background-color: #fea419;
   font-weight: bold;
+  border-color: #000040;
   border-radius: 4px;
 }
 
-.dark-mode .collapse-button{
+.dark-mode .collapse-button {
   background-color: #000040;
-  color: #ffffff; 
+  color: #ffffff;
 }
-.dark-mode .expand-button{
+.dark-mode .expand-button {
   background-color: #000040;
-  color: #ffffff; 
+  color: #ffffff;
 }
 .dark-mode .topic {
   /* background-color: #fea419; */
@@ -166,3 +178,65 @@
   font-weight: bold;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 20%;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sidebar.collapsed {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+
+ 
+.section {
+  margin-bottom: 40px;
+}
+ 
+/* Scrollbar styles (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+ 
+/* Collapsed sidebar */
+.sidebar.collapsed {
+  width: 50px;
+  padding: 10px 5px;
+}
+ 
+.main-content.collapsed {
+  margin-left: 50px;
+}

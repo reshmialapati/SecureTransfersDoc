@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logo_DarkBG from './assets/logo_DarkBG.png';
-import logo_whiteBG from './assets/logo_whiteBG.png';
+
 import MyToggle from './MyToggle';
 import { AiFillHome } from 'react-icons/ai';
 
@@ -9,7 +8,7 @@ const Header = ({ isDarkMode, toggleDarkMode, searchTerm, setSearchTerm,setSelec
   return (
     <header className="header">
       <div className="header-left">
-        <img src={isDarkMode ? logo_DarkBG : logo_whiteBG} alt="Logo" className="logo" />
+        <img src={isDarkMode ? "./logo_DarkBG.png" : "./logo_whiteBG.png"} alt="Logo" className="logo" />
       </div>
       <div className="header-right">
       <button className="home-button" onClick={() => setSelectedItem('Home')}>

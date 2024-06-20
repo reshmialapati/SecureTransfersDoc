@@ -3,11 +3,14 @@
     /* background-color: #000040; */
     /* padding: 20px; */
     /* color: white; */
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width:100%;
   }
+
   
   .header-controls {
     display: flex;
@@ -20,3 +23,42 @@
     margin-right: 10px;
   }
   
+
+/* Media Queries for responsiveness */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+  }
+
+  .header-controls {
+      margin-top: 10px;
+      margin-right: 0;
+  }
+
+  .header-controls input {
+      margin-right: 5px;
+      width: 80%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .header {
+      padding: 10px;
+  }
+
+  .header-controls {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+      width: 100%;
+  }
+
+  .header-controls input {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+}

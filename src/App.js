@@ -29,33 +29,33 @@ const App = () => {
 
   const contentRef = useRef(null);
 
-  // useEffect(() => {
-  //   const handleCopy = (e) => {
-  //     e.preventDefault();
-  //     alert("Copying is not allowed!");
-  //   };
+  useEffect(() => {
+    const handleCopy = (e) => {
+      e.preventDefault();
+      alert("Copying is not allowed!");
+    };
 
-  //   const handleCut = (e) => {
-  //     e.preventDefault();
-  //     alert("Cutting is not allowed!");
-  //   };
+    const handleCut = (e) => {
+      e.preventDefault();
+      alert("Cutting is not allowed!");
+    };
 
-  //   const handleContextMenu = (e) => {
-  //     e.preventDefault();
-  //     alert("Right-click is disabled!");
-  //   };
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+      alert("Right-click is disabled!");
+    };
   
-  //   const content = contentRef.current;
-  //   content.addEventListener("copy", handleCopy);
-  //   content.addEventListener("cut", handleCut);
-  //   content.addEventListener("contextmenu", handleContextMenu);
+    const content = contentRef.current;
+    content.addEventListener("copy", handleCopy);
+    content.addEventListener("cut", handleCut);
+    content.addEventListener("contextmenu", handleContextMenu);
 
-  //   return () => {
-  //     content.removeEventListener("copy", handleCopy);
-  //     content.removeEventListener("cut", handleCut);
-  //     content.removeEventListener("contextmenu", handleContextMenu);
-  //   };
-  // }, []);
+    return () => {
+      content.removeEventListener("copy", handleCopy);
+      content.removeEventListener("cut", handleCut);
+      content.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -63,6 +63,7 @@ const App = () => {
 
   return (
     <div className={`app ${isDarkMode ? "dark" : "light"}`} ref={contentRef}>
+   
       <Header
         isDarkMode={isDarkMode}
         setSelectedItem={setSelectedItem}
@@ -70,6 +71,7 @@ const App = () => {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
       />
+     
       <div className="app-body">
         <Sidebar
           selectedItem={selectedItem}

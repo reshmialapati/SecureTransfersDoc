@@ -19,7 +19,9 @@ header.light-mode {
   background-color: #dddd;
   color: #000000;
 }
-
+.body {
+  overflow-y: hidden !important;
+}
 
 .app {
   display: flex;
@@ -34,6 +36,7 @@ header.light-mode {
 .app-body {
   display: flex;
   flex: 1;
+  overflow-y: hidden !important;
 }
 
 .header {

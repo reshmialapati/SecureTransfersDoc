@@ -1,14 +1,25 @@
 /* MainContent.css */
+/* .main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+} */
+
 .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .highlight {
-    background-color: yellow;
-  }
-  
-  /* Bullet point list styling */
+  flex: 1;
+  padding: 20px;
+  margin-top: 4%;
+  margin-left: 290px; /* Adjust according to sidebar width */
+  transition: margin-left 0.3s;
+  overflow-y: auto !important;
+  position:sticky;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+/* Bullet point list styling */
 .main-content ul {
   list-style-type: disc;
   margin: 10px 0;
@@ -19,9 +30,55 @@
   margin: 5px 0;
 }
 
+/* Image styling */
 .content-image {
+  width: 70%;
+  position: fixed;
   max-width: 100%;
-  height: auto;
+  height: 80%;
   display: block;
   margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 15px;
+  }
+  
+  .main-content ul {
+    padding-left: 15px;
+  }
+
+  .content-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+  
+  .main-content ul {
+    padding-left: 10px;
+  }
+
+  .content-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 5px;
+  }
+  
+  .main-content ul {
+    padding-left: 5px;
+  }
+
+  .content-image {
+    max-width: 100%;
+  }
 }
