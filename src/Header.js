@@ -20,9 +20,7 @@ const Header = ({ isDarkMode, toggleDarkMode, searchTerm, setSearchTerm,setSelec
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        {/* <button onClick={toggleDarkMode}>
-          {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-        </button> */}
+  
         <div>
                <MyToggle state={isDarkMode} setState={toggleDarkMode}/>
             </div>

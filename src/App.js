@@ -79,7 +79,10 @@ const App = () => {
           isCollapsed={isSidebarCollapsed}
           toggleSidebar={toggleSidebar}
         />
-        <MainContent selectedItem={selectedItem} searchTerm={searchTerm}  isSidebarCollapsed={isSidebarCollapsed}/>
+        <MainContent 
+        selectedItem={selectedItem} searchTerm={searchTerm} isSidebarCollapsed={isSidebarCollapsed}
+        />
+
       </div>
       
     </div>

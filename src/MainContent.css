@@ -1,15 +1,11 @@
 /* MainContent.css */
-/* .main-content {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-} */
+
 
 .main-content {
   flex: 1;
   padding: 20px;
   margin-top: 4%;
-  margin-left: 290px; /* Adjust according to sidebar width */
+  margin-left: 290px;
   transition: margin-left 0.3s;
   overflow-y: auto !important;
   position:sticky;
@@ -19,7 +15,6 @@
   background-color: #fea419;
 }
 
-/* Bullet point list styling */
 .main-content ul {
   list-style-type: disc;
   margin: 10px 0;
@@ -30,11 +25,9 @@
   margin: 5px 0;
 }
 
-/* Image styling */
+
 .content-image {
   width: 60%;
-  /* position: relative; */
-  /* max-width: 100%; */
   margin-top: 4%;
   max-height: 7% !important;
   display: block;
@@ -43,14 +36,13 @@
 .content-homeimage{
   width: 80%;
   position: fixed;
-  /* max-width: 100%; */
   margin-top: 4%;
   max-height: 80% !important;
   display: block;
   margin: 0 auto;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1200px) {
   .main-content {
     padding: 15px;

@@ -1,11 +1,11 @@
 import React from "react";
-import "./MainContent.css"; // Assuming you'll add some CSS for highlighting
+import "./MainContent.css"; 
 import Footer from "./Footer";
 
 function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
   const content = {
     Home: {
-      homeimage: "/Picture1.png",
+      homeimage: "Picture1.png",
     },
     INTRODUCTION: {
       heading: "Introduction to Secure Transfers",
@@ -32,12 +32,12 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Metadata Tagging and Custom Controls: The platform allows for the addition of metadata during file uploads, enhancing the ability to track and manage files. Custom controls can limit file types, sizes, and the number of files uploaded, providing granular control over file transfer operations.",
         "Advanced Cryptography Features: SecureTransfers supports advanced cryptography features, including PGP and WinZip AES encryption for both inbound and outbound files. It also supports signing and verifying file signatures, ensuring the integrity and authenticity of transferred data.",
       ],
-      // image: "https://via.placeholder.com/150",
+
     },
     SecureTransfersPlatform: {
       heading: "SecureTransfers Platform",
       paragraphs: ["The SecureTransfers platform consists of:"],
-      image: "./STP.jpg",
+      image: "STP.jpg",
       paragraphs1: [
         "●	Projects: Managed by Secure Store project Admins (PPO/PSO) consisting of folders, users, and access controls.",
         "●	Folders: Contain files accessible by users (both external and internal), organized by project with RBAC (Role-Based Access Control) capabilities.",
@@ -89,7 +89,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Secure Store is a comprehensive solution within SecureTransfers for securely managing and storing critical data. It simplifies the creation and management of users and folders, providing a robust platform for data organization and access control. Secure Store ensures that all data is protected with advanced security features, including encryption and access restrictions, making it an ideal choice for enterprises looking to safeguard their sensitive information. It streamlines the process of creating and managing users and folders, ensuring efficient data organization. The module also helps organizations meet regulatory requirements for data storage and security while ensuring seamless scalability to handle the growing data needs of modern enterprises.",
         "Secure Automation, another essential module of SecureTransfers, focuses on automating file transfers and workflows efficiently. It handles scheduled file transfers seamlessly, providing a secure way to automate data movement across various systems. Secure Automation supports a variety of transfer protocols and integrates effortlessly with existing infrastructure, making it an essential component for businesses aiming to streamline their file transfer processes. It automates file transfers based on predefined schedules, reducing manual intervention and minimizing errors. The module supports multiple transfer protocols, ensuring secure data transmission, and integrates easily with existing systems and workflows, providing a flexible solution for diverse IT environments. It also offers comprehensive monitoring and reporting capabilities to track transfer activities and ensure compliance.",
       ],
-      // image: "https://via.placeholder.com/150",
+      
     },
     KeyPurposes: {
       heading: "Key Purposes of a Project in Secure Transfers",
@@ -99,7 +99,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Access Control, Security, and Customization: Projects allow you to assign specific roles and permissions to users, ensuring that only authorized personnel can access and manage the files and tasks within a project. Enhanced security measures, including user authentication, encryption protocols, and access restrictions, can be applied at the project level. Different projects may have varying requirements in terms of file transfer protocols, security settings, and notifications, allowing for customization to meet specific needs.",
         "Monitoring, Reporting, and Resource Management:Projects maintain detailed logs of all activities, providing an audit trail for file transfers, which is crucial for compliance and troubleshooting. You can generate reports on project activities to monitor performance and identify issues. Projects help you manage resources, such as storage and bandwidth, by allocating them appropriately to different tasks and users, enabling cost management and optimization.",
       ],
-      // image: "https://via.placeholder.com/150",
+     
     },
 
     ProjectManagement: {
@@ -122,19 +122,19 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "● Primary Owner*: Search for the employee using their Employee ID and add them to the Primary Owner field. The Primary Owner will be responsible for the project and will have full access to the project and its configurations. They can make changes and add or modify Primary and Secondary Owners.",
         "● Secondary Owners*: Secondary Owner will be the second in line and responsible for any changes required in the absence of the Primary Owner. The Secondary Owner will be the first point of contact in the absence of the Primary Owner. They will have similar access as the Primary Owner, except they cannot change the Primary Owner but can add or delete other Secondary Owners.",
       ],
-      image2: "./projCreate1.png",
+      image2: "projCreate1.png",
       paragraphs2: [
         "3.	Add Primary and Secondary Owners in the Managers Tab",
         "●	Primary Owner*: The Primary Owner is responsible for the project and has full access to its configurations. They can make changes and add or modify both Primary and Secondary Owners. Search for the employee by using their Employee ID and add them to the Primary Owner field.",
         "●	Click on the '+ Select Primary Owner' button to choose the Primary Owner.",
       ],
-      image: "./projCreate2.png",
+      image: "projCreate2.png",
       paragraphs1: [
         "●	Secondary Owners*: Secondary Owners are responsible for managing the project in the absence of the Primary Owner. They have similar access rights but cannot change the Primary Owner. They can add or remove other Secondary Owners.",
         "4.	Save the New Project.",
         "●	After filling in all the necessary information, click the 'Save' button to create the new project.",
       ],
-      image3: "./projCreate3.png",
+      image3: "projCreate3.png",
     },
     ChangeOwnership: {
       heading: "Change ownership, including Primary and Secondary owners",
@@ -160,7 +160,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "1. Navigate to the Logo Tab:",
         "● Projects without a custom logo will automatically be assigned a default logo.",
       ],
-      image2: "./uploadlogo1.png",
+      image2: "uploadlogo1.png",
       paragraphs2: [
         "2.	Upload the Logo",
         "●	Click the 'Choose File' button.",
@@ -180,7 +180,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "1.	Navigate to the Help Tab",
         "●	Locate the tab designated for help settings in your project management interface.",
       ],
-      image2: "./helpmessage.png",
+      image2: "helpmessage.png",
       paragraphs2: [
         "2.	Enter the Support Mailbox",
         "●	In the designated field, enter the support mailbox address. This mailbox will be used by partners to contact your project-specific support team, typically using an externally accessible distribution list (DL).",
@@ -189,7 +189,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "4.	Save the Changes.",
         "●	Ensure you save the changes after making these updates.",
       ],
-      image: "./helpmessage1.png",
+      image: "helpmessage1.png",
     },
     GenerateLogReport: {
       heading: "Generate an activity log report",
@@ -203,7 +203,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "1.	Navigate to the Monitoring Section",
         "●	Select the 'Application Log' option.",
       ],
-      image2: "./adminuiaccess.png",
+      image2: "adminuiaccess.png",
       paragraphs2: [
         "2.	Search Activity Logs",
         "●	In the Application Log screen, filter your search criteria.",
@@ -221,7 +221,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "3.	Locate the Audit Logs Folder",
         "●	Find the relevant project-specific <project name>_AuditingLogs folder. This folder contains zip files of all file transactions for the specified project on specific days. The folder is continuously updated with new files appended daily. Note that it is not automatically cleaned.",
       ],
-      image2: "./auditlog.png",
+      image2: "auditlog.png",
       paragraphs2: [
         "4.	Manage Folder Content",
         "●	It is the project admin's responsibility to maintain the content of this folder, including deleting or cleaning log files as necessary.",
@@ -276,7 +276,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Re-activating User Accounts",
         "●	Project administrators can reactivate user access by resetting the account state to 'active' using the 'reset password' option. This action triggers an email to the user, prompting them to reactivate their login with a password of their choice. Users can also reactivate their platform access using the publicly available 'Reset my Access' function, accessible from the Secure Transfers internet-facing URLs.",
       ],
-      image2: "./usermanagement.png",
+      image2: "usermanagement.png",
       paragraphs2: [
         "●	Instance administrators can reactivate expired user accounts by using the 'reset password' feature. Note that project Primary owners, secondary owners, and API accounts are exempt from automatic deletion.",
         "User Management Controls",
@@ -304,12 +304,12 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "●	Enter the relevant User Information",
         "●	For Employees, enter the necessary details.",
       ],
-      image2: "./createuser1.png",
+      image2: "createuser1.png",
       paragraphs2: [
         "●	For external or system users, ensure to fill in the Description field with relevant contact details, such as the user’s company name, division, or other pertinent information.",
         "●	Click Save",
       ],
-      image: "./createuser2.png",
+      image: "createuser2.png",
     },
     updateuser: {
       heading: "Updating a User",
@@ -318,7 +318,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "1.	Initiate User Update",
         "●	Select the desired user using the filtering controls and click the Update User button.",
       ],
-      image2: "./updateuser1.png",
+      image2: "updateuser1.png",
       paragraphs2: [
         "2.	Modify User Information.",
         "●	In the pop-up window, navigate to the appropriate tab based on the changes required.",
@@ -327,7 +327,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "3.	Save Changes.",
         "●	Click the Save button to apply the updates to the user profile.",
       ],
-      image: "./updateuser2.png",
+      image: "updateuser2.png",
     },
     activateuser: {
       heading: "Activating a user",
@@ -337,7 +337,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "●	Select the desired user using the filtering controls and enter the desired password.",
         "●	Click the “activate” button.",
       ],
-      image2: "./activateuser.png",
+      image2: "activateuser.png",
     },
     configurecontrols: {
       heading: "Configuring Extended Controls for Users",
@@ -361,7 +361,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "●	These controls are typically enforced for Machine-to-Machine (M2M) file transfer user types, such as System users and External System users, but are not enforced for Human users like Employees and External users.",
         "If these login frequency controls are not set, the global Secure Transfers platform defaults will apply, managed by the platform owners.",
       ],
-      image2: "./activateuser.png",
+      image2: "activateuser.png",
     },
     deleteuser: {
       heading: "Deleting a User",
@@ -376,7 +376,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "●	Click the Delete User button.",
         "●	Confirm the deletion by clicking Confirm or cancel the action by clicking Cancel.",
       ],
-      image2: "./deleteUser.png",
+      image2: "deleteUser.png",
       paragraphs2: [
         "After successfully deleting the user account, Secure Transfers platform will notify the user via email that their access has been revoked and their account has been deleted.",
       ],
@@ -402,7 +402,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
       ],
     },
     ADSecurityGroup: {
-      heading: "ADSecurityGroup – Active Directory/IAM User",
+      heading: "ADSecurityGroup Active Directory/IAM User",
       paragraphs: [
         "The ADSecurityGroup user type in Secure Transfers allows any members of an Active Directory/IAM group to be granted access to a specific Folder. This feature is particularly useful for project teams leveraging IAM Managed Active Directory groups to manage assets, application access, and folder/file access, reducing the overhead of managing individual user accounts.",
         "Important Notes",
@@ -416,7 +416,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "1.	Create ADSecurityGroup User",
         "●	Create an ADSecurityGroup user type in Secure Transfers and assign it to an existing Active Directory group.",
       ],
-      image: "./ADsec.png",
+      image: "ADsec.png",
       paragraphs1: [
         "●	In the 'Name' and 'Security Group' fields, enter the name of an existing Active Directory group that is used and managed by your project team.",
       ],
@@ -508,7 +508,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
       paragraphs: [
         "As a SecureTransfers Administrator, it is essential to efficiently create, update, and delete folders and partners, as well as assign and manage folder access privileges. These tasks ensure smooth file exchanges between partners, systems, and servers using the SecureTransfers platform.Generate a project configuration and access audit report.",
       ],
-      // image: "https://via.placeholder.com/150",
+      
     },
     OrganizingandManaging: {
       heading: "Organizing and Managing Folders",
@@ -556,7 +556,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "●	Utilized storage space.",
         "To generate the report, choose the relevant project. Click on the Show Project Report Icon. The system will dynamically generate a report containing an overview of the project's configuration, which will be displayed within a few seconds.",
       ],
-      image2: "./genauditreport.png",
+      image2: "genauditreport.png",
     },
 
     CreateFolder: {
@@ -570,7 +570,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Optionally, enable any necessary settings such as Encrypted Storage and click Save to store the configuration.",
         "The newly created folder will now appear in the My Folders screen.",
       ],
-      image: "/createFolder.png",
+      image: "createFolder.png",
     },
     CreatePartners: {
       heading: "Create a New Partner",
@@ -581,7 +581,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Fill in User Details: Provide the necessary information for the new user, such as their name, email address, and role.",
         "Save Changes: Save the user details by clicking the “Save” button. If the user already exists, simply search for their name, and assign them to your Folder(s).",
       ],
-      image: "/createPartners.png",
+      image: "createPartners.png",
     },
     FolderAccess: {
       heading: "Assign Folder access privilages",
@@ -604,7 +604,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Update Folder Type:In the popup window, update the folder type and click “Save”.",
         "For SecureTransfers folders with “Encrypted Storage” remove exclamation option before changing the folder type.",
       ],
-      image: "/changeFolder.png",
+      image: "changeFolder.png",
     },
     FolderComments: {
       heading: "Folder Comments",
@@ -617,7 +617,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Look for the “Edit Folder Access” control .",
         "Navigate to the Comments tab and enter comments in the provided field. Save the changes.",
       ],
-      image: "/folderComments.png",
+      image: "folderComments.png",
     },
     FolderBranding: {
       heading: "Folder Branding",
@@ -631,7 +631,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Navigate to the “Logo” tab.",
         "Upload Logo: Upload the desired logo and save the changes. Note that custom logos can impact UI performance, so use this feature judiciously.",
       ],
-      image: "/folderBranding.png",
+      image: "folderBranding.png",
     },
     FolderAccessControls: {
       heading: "Folder Access Controls",
@@ -647,7 +647,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Set access controls via the “Users” section by editing the User’s folder access.",
         "Alternatively, use the “Folders” section to edit access for specific users.",
       ],
-      image: "/folderAccess.png",
+      image: "folderAccess.png",
     },
     DataatRestProtection: {
       heading: "Data at Rest Protection (Encrypted Storage)",
@@ -661,7 +661,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Enable the encrypted storage flag. Save the configuration.",
         "Activating data-at-rest protection in Secure Transfers does not guarantee that source or target systems (including external users) will properly handle file protection on their end. This protection ensures that files are encrypted when stored on the SecureTransfers MFT storage system. When handling highly sensitive data, it is recommended to use end-to-end encryption. This ensures that the data is protected and encrypted throughout its entire lifecycle, from source to target, providing a higher level of security during transfer.",
       ],
-      image: "/DataAtRest.png",
+      image: "DataAtRest.png",
     },
     FolderVerification: {
       heading: "Folder Verification",
@@ -676,7 +676,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Wait for Completion: Allow some time for the test to complete. The duration depends on the number of folders associated with the partner.",
         "Check Results:On success, the system will display a message indicating that all folders for the partner have been verified successfully.On failure, the system will list the Folders for which verification tests have failed, including possible reasons such as incorrect access credentials.",
       ],
-      image: "./DataAtRest.png",
+      image: "DataAtRest.png",
     },
     TroubleshootingFailures: {
       heading: "Troubleshooting Failures",
@@ -711,7 +711,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Authenticate:Log in using the provided username and password.When prompted, accept the server host key to establish a trusted connection.",
         "File Transfer:Navigate to the directories to find the files you need to transfer.Use the client interface to upload or download files as necessary.",
       ],
-      image: "/sftpFileTransfer.png",
+      image: "sftpFileTransfer.png",
     },
     FTPSFileTransfers: {
       heading: "Detailed Instructions to use an FTPS Client for File Transfers",
@@ -727,7 +727,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Authenticate:	Log in using the provided username and password., Accept the servers certificate to establish a trusted connection.",
         "File Transfer: Navigate to the directories to find the files you need to transfer. Use the clients interface to upload or download files as necessary.",
       ],
-      image: "/FTPSfileTransfer.png",
+      image: "FTPSfileTransfer.png",
     },
     WebBrowserFileTransfers: {
       heading: "Detailed Instructions for Browser-Based File Transfers",
@@ -743,7 +743,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "The folders contents will be displayed (it may be empty initially).",
         "Use the provided interface controls to upload or download files.",
       ],
-      image: "/WebFileTransfer.png",
+      image: "WebFileTransfer.png",
     },
     INTERFACEMANAGEMENT: {
       heading: "Interface Management",
@@ -805,7 +805,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Select whether to activate 'Encrypted Storage', which secures files using SecureTransfers' encryption keys.",
         "Enable email notifications for successful file delivery under 'Alert on Success'. f. Conclude this section by clicking 'Save'.",
       ],
-      image: "/interfaceSetup.png",
+      image: "interfaceSetup.png",
     },
     FileManagementRetention: {
       heading: "Adjusting File Management and Retention",
@@ -816,7 +816,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "The character encoding format for files: binary, ASCII, or EBCDIC.",
         "Commit these settings by clicking 'Save'.",
       ],
-      image: "/filemanagement.png",
+      image: "filemanagement.png",
     },
     CompressionSettings: {
       heading: "Compression Settings",
@@ -826,7 +826,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Set parameters for decompressing files from Zip archives.",
         "Apply these choices by clicking 'Save'.",
       ],
-      image: "/compressionset.png",
+      image: "compressionset.png",
     },
     CryptographicConfigurations: {
       heading: "Cryptographic Configurations",
@@ -837,7 +837,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "If necessary, enter the required password.",
         "Save your cryptographic settings.",
       ],
-      image: "/cryptoconfig.png",
+      image: "cryptoconfig.png",
     },
     SignatureManagement: {
       heading: "Signature Management",
@@ -846,7 +846,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Configure options for PGP signing and verification according to your security protocols.",
         "Save these preferences.",
       ],
-      image: "/sigMgmnt.png",
+      image: "sigMgmnt.png",
     },
     SequencingFiles: {
       heading: "Sequencing Files",
@@ -857,7 +857,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "In the Negative Tolerance box, enter a number. If set to 0, an error will be sent, and the interface will stop if the sequence number is smaller or equal to the previous one. A warning will be sent if it is within the tolerance.",
         "Click Save.",
       ],
-      image: "./seqfiles.png",
+      image: "seqfiles.png",
     },
     TransferScheduling: {
       heading: "Transfer Scheduling",
@@ -867,7 +867,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Select the applicable weekdays and exact dates of the month for these transfers.",
         "Save these scheduling details",
       ],
-      image: "./transferscheduling.png",
+      image: "transferscheduling.png",
     },
     classPullInterface: {
       heading: "Configuring a Class Pull Interface",
@@ -907,7 +907,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Maximum Activity Interval: Enter the time in seconds to alert if no file is received within this interval. Leave blank to disable.",
         "Confirm these settings by clicking 'Save'.",
       ],
-      image: "./CPInterfaceSetup.png",
+      image: "CPInterfaceSetup.png",
     },
     ManagingFile: {
       heading: "Managing File Handling Options",
@@ -917,7 +917,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Delete on Source: Select this option to delete files from the source post-successful transfer.",
         "UnZip Incoming: Choose to either keep this feature off or unzip incoming Zip files and process all contained files.",
       ],
-      image: "./CPmanagingFile.png",
+      image: "CPmanagingFile.png",
     },
     SchedulingFileTransfers: {
       heading: "Scheduling File Transfers",
@@ -928,7 +928,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Weekdays/Days of the Month: Select which days transfers are allowed and specify exact dates using commas (e.g., “3, 10, 17, 24, 31”).",
         "Click 'Save' to confirm the scheduling settings.",
       ],
-      image: "./CPschedulefiletrans.png",
+      image: "CPschedulefiletrans.png",
     },
     AdHocScheduling: {
       heading: "Ad-Hoc Scheduling",
@@ -937,7 +937,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "Date & Time: Input specific times for when the interface should actively pull files.",
         "Use the 'Add' button to include these times in the schedule.",
       ],
-      image: "./CPadhocscheduling.png",
+      image: "CPadhocscheduling.png",
       paragraphs1: [
         "Key Considerations",
         "Files ready for pulling must be 'final and completed'—not open or being written to. Ideally, source applications should not write to the directory from which files are being pulled. If necessary, use a temporary filename tag (e.g., <filename>.<extension>.tmp) and rename files only after writing is complete.",
@@ -1273,8 +1273,8 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
       ],
     },
     HostProtocols: {
-      // heading: "Host Protocols and Their Parameters",
-      image: "./hostprotocol.png",
+      heading: "Host Protocols and Their Parameters",
+      image: "hostprotocol.png",
     },
     AdditionalSettings: {
       paragraphs: [
@@ -1298,7 +1298,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
       ],
     },
     HostProtocolsUsage: {
-      image: "./hostprotocolusage.png",
+      image: "hostprotocolusage.png",
     },
     SecurityNotes: {
       paragraphs: [
@@ -1329,7 +1329,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "In Extended Settings, add sftp.compression=false.",
         "Click 'Save'.",
       ],
-      image: "./addpartnersftp.png",
+      image: "addpartnersftp.png",
     },
     addpartnerwithaws: {
       heading: "Adding a Partner with AWS S3 Protocol",
@@ -1353,7 +1353,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "6.	Save the Configuration:",
         "●	Click Save.",
       ],
-      image: "./addpartnerwithaws.png",
+      image: "addpartnerwithaws.png",
     },
     PullInterfacePartnersTab: {
       heading: "Steps to Configure a Pull Interface from the Partners Tab",
@@ -1370,7 +1370,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "●	Archive Folder: Define the folder directory on the source system where Secure Transfers will move the file after a successful transfer. Secure Transfers will append a timestamp to the file name to avoid conflicts. Ensure the archive folder is not a subdirectory of the source folder.",
         "●	Click Save.",
       ],
-      image: "./pullinterfacepartners.png",
+      image: "pullinterfacepartners.png",
     },
     PushInterfacefromPartners: {
       heading: "Steps to Configure a Push Interface from the Partners Tab",
@@ -1386,11 +1386,11 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "5.	Select the target folder where you want the files to be pushed.",
         "6.	Click on ‘Save’.",
       ],
-      image: "./pushinterfacepartners.png",
+      image: "pushinterfacepartners.png",
     },
     transferGroups: {
       heading: "Transfer Groups in SecureTransfers",
-      image1: "./transfersgroup1.png",
+      image1: "transfersgroup1.png",
       paragraphs: [
         "Transfer Groups in SecureTransfers are designed to organize and manage the sequential transmission of files that are related or dependent on each other within a workflow. This feature is vital for maintaining the integrity and order of processes where the sequence of file delivery impacts the outcome.",
         "Managing Transfer Groups in SecureTransfers:",
@@ -1404,7 +1404,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
         "●	Open the Transfer Groups Tab: Click on 'Transfer Groups' to access or create new groups.",
         "●	Enter Transfer Group Name: Provide a descriptive name that encapsulates the association of the files within the group.",
       ],
-      image: "./transfersgroup.png",
+      image: "transfersgroup.png",
     },
     SettingTGSendOrder: {
       heading: "Setting Transfer Group Send Order",
@@ -1569,7 +1569,7 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
     },
   };
 
-  // const selectedContent = content[selectedItem];
+ 
   const TabbedParagraph = ({
     text,
     isTabbed,
@@ -1608,10 +1608,6 @@ function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
 
     return (
       <div>
-        {/* <h1>{itemContent.heading}</h1>
-        {filteredParagraphs.map((paragraph, index) => (
-          <p key={index}>{highlightSearchTerm(paragraph, searchTerm)}</p>
-        ))} */}
 
         {itemContent.heading && <h2>{itemContent.heading}</h2>}
         {itemContent.image1 && (

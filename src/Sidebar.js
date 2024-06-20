@@ -22,7 +22,7 @@ const Sidebar = ({
     {
       label: "INTRODUCTION",
       value: "INTRODUCTION",
-      icon: <img src="introduction.png" alt="intro" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}} />,
+      icon: (<img src="introduction.png" alt="intro" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}} />),
       subItems: [
         { label: "Key Features", value: "KeyFeatures" },
         { label: "SecureTransfers Platform", value: "SecureTransfersPlatform" },
@@ -33,7 +33,7 @@ const Sidebar = ({
     {
       label: "PROJECTS",
       value: "PROJECTS",
-      icon: <img src="projects.png" alt="img" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}}/>,
+      icon: (<img src="projects.png" alt="img" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}}/>),
       subItems: [
         { label: "Key Purposes", value: "KeyPurposes" },
 
@@ -61,7 +61,7 @@ const Sidebar = ({
     {
       label: "USERS",
       value: "USERS",
-      icon: <img src="user.png" alt="img" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}}/>,
+      icon: (<img src="user.png" alt="img" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"27px",width:"26px",marginLeft:"15px"}}/>),
      
       subItems: [
         { label: "User Types ", value: "UserTypes" },
@@ -87,7 +87,7 @@ const Sidebar = ({
     {
       label: "FOLDERS",
       value: "FOLDERS",
-      icon: <img src="folder.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>,
+      icon: (<img src="folder.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>),
       subItems: [
         {
           label: "Organizing and Managing Folders",
@@ -124,7 +124,7 @@ const Sidebar = ({
     {
       label: "INTERFACE MANAGEMENT",
       value: "INTERFACEMANAGEMENT",
-      icon: <img src="interface.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>,
+      icon: (<img src="interface.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>),
       subItems: [
         {
           label: "Key Functions of Interfaces",
@@ -188,7 +188,7 @@ const Sidebar = ({
           value: "InterfaceCrypto",
         },
         {
-          label: "Use Cases/ Example Scenarios",
+          label: "Example Scenarios",
           value: "UseCases",
         },
         {
@@ -277,7 +277,7 @@ const Sidebar = ({
     {
       label: "MONITORING",
       value: "MONITORING",
-      icon: <img src="monitoring.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>,
+      icon: (<img src="monitoring.png" alt="interface" className={isCollapsed ? "collapsed-icon" : "expanded-icon"} style={{height:"23px",width:"25px",marginLeft:"15px"}}/>),
       subItems: [
         {label: "Defining a File Transaction Filter",value: "definefilefilter"},
         {label: "Viewing File Transaction Details",value: "viewfile"},
@@ -334,7 +334,7 @@ const Sidebar = ({
             className={`topic ${isExpanded ? "expanded" : ""} ${
               item.value === selectedItem ? "selected" : ""
             }`}
-            // onClick={() => setSelectedItem(item.value)}
+           
             onClick={() => {
               setSelectedItem(item.value);
               toggleTopic(item.value);
@@ -370,9 +370,9 @@ const Sidebar = ({
       <div className="index-home">
       <button
         className="collapse-button"
-        // className={`collapse-button ${isCollapsed ? "collapsed" : "expanded"}`}
+     
         onClick={toggleSidebar}>
-          {/* {isCollapsed ?  :} */}
+       
           {isCollapsed  ? (
                 <TbSquareRoundedChevronRightFilled className='gricon' size={32} />
               ) : (
