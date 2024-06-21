@@ -34,11 +34,12 @@
   margin: 0 auto;
 }
 .content-homeimage{
-  width: 80%;
+  width: 50%;
   position: fixed;
   margin-top: 4%;
   max-height: 80% !important;
   display: block;
+  padding-left: 10%;
   margin: 0 auto;
 }
 

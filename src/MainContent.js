@@ -5,7 +5,7 @@ import Footer from "./Footer";
 function MainContent({ selectedItem, searchTerm, isSidebarCollapsed }) {
   const content = {
     Home: {
-      homeimage: "Picture1.png",
+      homeimage: "Picture1.jpeg",
     },
     INTRODUCTION: {
       heading: "Introduction to Secure Transfers",
